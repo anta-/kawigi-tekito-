@@ -24,6 +24,7 @@
 			<JButton Action="actLoad"/>
 			<JButton Action="actKillProcess"/>
 			<JButton Action="actTestCases"/>
+			<JButton Action="actGetCode"/>
 		</HorizontalPanel>
 	</VerticalPanel>
 </JFrame>

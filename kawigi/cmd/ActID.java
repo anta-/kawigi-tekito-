@@ -265,6 +265,8 @@ public enum ActID
 	actCancelArrayParam(null, null, "Cancel", null, null, TestCasesAction.class, true),
 	// Put plugin into separate window and back into Arena window.
 	actOutsideMode(KeyStroke.getKeyStroke(KeyEvent.VK_P, InputEvent.CTRL_MASK), new Integer(KeyEvent.VK_I), "Out/In", "Pop-out editor in different window or pop it back into Arena", null, PluginAction.class, true),
+	// Get code
+	actGetCode(null, null, "Get code", "Get code", null, GetCodeAction.class, true),
 	//UCCするか？
 	actUseUnusedCodeCleaner(null, new Integer(KeyEvent.VK_U), "Use unused code cleaner (C++ code only)", "Clean unused #defines, typedefs, comments and empty lines for submittion", null, BooleanSettingAction.class, true, "kawigi.ucc.useUCC", false),
 	//コメントを削除するか？
