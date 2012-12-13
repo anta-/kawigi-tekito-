@@ -469,6 +469,9 @@ public final class TestCasesAction extends DefaultAction
 	{
 		Dispatcher disp = Dispatcher.getGlobalDispatcher();
 		mainDlg = new JDialog((Frame)null, "Test cases editor", false);
+		
+		mainDlg.setModal(false);
+		
 		//mainDlg = new JDialog(Dispatcher.getWindow(), "Test cases editor", false);
 		mainDlg.addWindowListener(Dispatcher.getGlobalDispatcher());
 
