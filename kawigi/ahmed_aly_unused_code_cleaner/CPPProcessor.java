@@ -43,11 +43,11 @@ public class CPPProcessor {
 	public void cleanCode() {
 		try {
 			code = originalCode;
-			if(PrefFactory.getPrefs().getBoolean("kawigi.ucc.commentStrip", false))
+			if(PrefFactory.getPrefs().getBoolean("kawigi.ucc.stripComment", false))
 			{
-				code = (new CommentStripper()).stripComments(code)
-						.replaceAll("\r\n?", "\n");
+				code = (new CommentStripper()).stripComments(code);
 			}
+			code = code.replaceAll("\r\n?", "\n");
 
 			quoted = new boolean[code.length()];
 			boolean quote = false;
