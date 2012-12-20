@@ -151,6 +151,7 @@ public final class CPPLang extends EditorLanguage
 		text("#include <string>").endLine();
 		text("#include <vector>").endLine();
 		text("#include <ctime>").endLine();
+		text("#include <cmath>").endLine();
 		text("using namespace std").endCodeLine();
 	}
 	
