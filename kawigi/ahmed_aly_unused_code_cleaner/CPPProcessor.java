@@ -135,6 +135,7 @@ public class CPPProcessor {
 			int j = code.indexOf("typedef", i);
 			if (j == -1)
 				break;
+			i = j + 1;
 			if (!quoted[j] && (j == 0 || !validChar(code.charAt(j - 1)))) {
 				int start = j + "typedef".length();
 				if (start == code.length() || !isWhitespace(code.charAt(start)))
@@ -172,7 +173,6 @@ public class CPPProcessor {
 				defines[definesUsed][4] = "not seen";
 				definesUsed++;
 			}
-			i = j + 1;
 		}
 	}
 
